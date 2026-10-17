@@ -1,0 +1,3 @@
+[submodule ".emmydef/openresty"]
+	path = .emmydef/openresty
+	url = https://github.com/LuaCATS/openresty.git

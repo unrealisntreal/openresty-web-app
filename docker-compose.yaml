@@ -1,0 +1,11 @@
+services:
+  openresty:
+    image: openresty/openresty:1.31-alpine-fat
+
+    ports:
+      - "8080:80"
+    
+    volumes:
+      - ./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro
+      - ./server:/usr/local/openresty/nginx/server:ro
+      - ./client:/usr/local/openresty/nginx/client:ro
